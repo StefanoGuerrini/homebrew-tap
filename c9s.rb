@@ -5,23 +5,23 @@
 class C9s < Formula
   desc "Terminal dashboard for Claude Code sessions"
   homepage "https://github.com/stefanoguerrini/c9s"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.1/c9s_0.0.1_darwin_amd64.tar.gz"
-      sha256 "b626bd0bcbde256551c61144a422bfef90a6037269ebc924eac4446201067e5e"
+      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.2/c9s_0.0.2_darwin_amd64.tar.gz"
+      sha256 "d7bd4be08025d5566da95c04349969879489c7bb0e83b3b7661bf68e5af34d78"
 
       define_method(:install) do
         bin.install "c9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.1/c9s_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a6939ab07a027eebd6e9c867983d9e0028f22556eb0bf615b3c4c313870657c6"
+      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.2/c9s_0.0.2_darwin_arm64.tar.gz"
+      sha256 "ceb0aa57c871a84627802b1b61aadfc84b5166a846dd84670db60bff499d4efa"
 
       define_method(:install) do
         bin.install "c9s"
@@ -31,15 +31,15 @@ class C9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.1/c9s_0.0.1_linux_amd64.tar.gz"
-      sha256 "4522608863a31497aefccebf9327ca3a6c4ebd413436a19901cd5330799753c2"
+      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.2/c9s_0.0.2_linux_amd64.tar.gz"
+      sha256 "53427a81a9261cfcf7ccf341ce83e244d6dc28e954f2ce6bcc91026e39b999aa"
       define_method(:install) do
         bin.install "c9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.1/c9s_0.0.1_linux_arm64.tar.gz"
-      sha256 "66c253bc452c34118a2858ed8cbaad30a28b8bcd273811d51f36c9a17be517b0"
+      url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.0.2/c9s_0.0.2_linux_arm64.tar.gz"
+      sha256 "656371c8ef69b7d720f66c484d3ef0d7529a5792b05c2e1a8f6b91c6799a9727"
       define_method(:install) do
         bin.install "c9s"
       end
