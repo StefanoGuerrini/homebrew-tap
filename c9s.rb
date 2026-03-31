@@ -13,7 +13,7 @@ class C9s < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.6.0/c9s_0.6.0_darwin_amd64.tar.gz"
-      sha256 "2ad4498f7e23bcb1cd1b5a9b4fe6982886c9ffd2287009a4a7e796efeba236c3"
+      sha256 "f785b862df8141efcd8a2d2285846438924566cb57ff809ff284a9b6699f39a7"
 
       define_method(:install) do
         bin.install "c9s"
@@ -21,7 +21,7 @@ class C9s < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.6.0/c9s_0.6.0_darwin_arm64.tar.gz"
-      sha256 "eb28f7e917f8c7d632863289fa02920e340d5d254e690ab0d7e96ee7008ef69e"
+      sha256 "921e6072a97d7dac57c60b448ae17875595848fd4d34abed92efaf75cecec894"
 
       define_method(:install) do
         bin.install "c9s"
@@ -32,14 +32,14 @@ class C9s < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.6.0/c9s_0.6.0_linux_amd64.tar.gz"
-      sha256 "f5e244f1627aa3c3ae6e8be41a47a85758ca91b71077d8a05489f2f3b54b11af"
+      sha256 "79daea5748fe7c43e7710782a938da3efd664a4ac378327ea575cd0168c8acdb"
       define_method(:install) do
         bin.install "c9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/StefanoGuerrini/c9s/releases/download/v0.6.0/c9s_0.6.0_linux_arm64.tar.gz"
-      sha256 "9fb6169d35b9a4404cf99453251e62ab72999464d7b88ed01bfd24caa9ceb97d"
+      sha256 "c856e0435c5a46d4d07b008c1724d83324edeb35fdd45f3b09877278aaf5fb4f"
       define_method(:install) do
         bin.install "c9s"
       end
